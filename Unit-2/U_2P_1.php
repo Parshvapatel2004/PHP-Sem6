@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Post Get</title>
+<title>Post</title>
 </head>
 <body>
 <form action="U_2P_1.php" method="post">
