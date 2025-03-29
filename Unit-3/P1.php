@@ -14,7 +14,7 @@
             var pass=document.getElementById("pass").value;
 
             xml.open("POST",'P1(2).php?uname='+uname+'&pass='+pass,true);
-
+                                    
             xml.http.onreadystagechange=function()
             {
                 if(xmlhttp.readystate==4 && xmlhttp.status==200){
