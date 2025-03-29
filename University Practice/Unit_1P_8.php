@@ -1,13 +1,15 @@
 <?php
-$arr=array(12,35,78,98,4,6,7,90,45);
-echo nl2br("\n Before sorting\n");
-for($i=0;$i<count($arr);$i++)
+$arr=array(99,78,67,76,34,45,67,23,55,66,999);
+$cnt=count($arr);
+echo(nl2br("\n Before Sorting"));
+for($i=0;$i<$cnt;$i++)
 {
     echo "<br>arr[".$i."]=".$arr[$i];
 }
-for($i=0;$i<count($arr);$i++)
+
+for($i=0;$i<$cnt;$i++)
 {
-    for($j=$i+1;$j<count($arr);$j++)
+    for($j=$i+1;$j<$cnt;$j++)
     {
         if($arr[$i]>$arr[$j])
         {
@@ -16,17 +18,17 @@ for($i=0;$i<count($arr);$i++)
             $arr[$j]=$tmp;
         }
     }
+
 }
-echo nl2br("\n After sorting array into Assending order \n");
-for($i=0;$i<count($arr);$i++)
+echo(nl2br("\n After sorting in asseding order"));
+for($i=0;$i<$cnt;$i++)
 {
     echo "<br>".$arr[$i];
 }
 
-
-for($i=0;$i<count($arr);$i++)
+for($i=0;$i<$cnt;$i++)
 {
-    for($j=$i+1;$j<count($arr);$j++)
+    for($j=$i+1;$j<$cnt;$j++)
     {
         if($arr[$i]<$arr[$j])
         {
@@ -35,10 +37,12 @@ for($i=0;$i<count($arr);$i++)
             $arr[$j]=$tmp;
         }
     }
+
 }
-echo (nl2br("\n After Shorting array in desending order \n"));
-for($i=0;$i<count($arr);$i++)
+echo(nl2br("\n After sorting in decending order"));
+for($i=0;$i<$cnt;$i++)
 {
     echo "<br>".$arr[$i];
 }
+
 ?>
