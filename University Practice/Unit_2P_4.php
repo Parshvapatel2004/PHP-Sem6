@@ -28,6 +28,7 @@
 </html>
 
 <?php
+error_reporting(0);
 include("conneciton.php");
 $productname=$_POST["Pro_name"];
 $price=$_POST["Pro_price"];
@@ -45,3 +46,5 @@ if(!empty($productname)&&!empty($price)&&!empty($qoh))
     echo "Internal server error";
 }
 ?>
+
+
