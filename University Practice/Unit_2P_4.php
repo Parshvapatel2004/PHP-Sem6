@@ -29,7 +29,7 @@
 
 <?php
 error_reporting(0);
-include("conneciton.php");
+include("connection.php");
 $productname=$_POST["Pro_name"];
 $price=$_POST["Pro_price"];
 $qoh=$_POST["QOH"];

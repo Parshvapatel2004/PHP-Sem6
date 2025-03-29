@@ -1,5 +1,5 @@
 <?php
-include("Conneciton.php");
+include("Connection.php");
 $sel_qry="SELECT * FROM product";
 $res=mysqli_query($con,$sel_qry);
 ?>
